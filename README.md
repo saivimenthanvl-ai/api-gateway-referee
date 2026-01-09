@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Summary
 
-## Getting Started
+API Gateway Referee is a referee-style decision tool that compares AWS API Gateway
+options (HTTP API, REST API, WebSocket API) based on **explicit user constraints**
+instead of static recommendations.
 
-First, run the development server:
+Rather than answering “Which API Gateway should I use?” with opinions,
+the tool evaluates trade-offs and explains **why one option wins and what you give up**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Before vs After: Decision Clarity
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ❌ Before – Static Documentation & Ambiguity
+Developers typically rely on:
+- AWS documentation pages
+- Blog posts with opinionated recommendations
+- Incomplete comparisons that hide trade-offs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Result:**  
+Unclear decisions, over-engineering, or unnecessary cost.
 
-## Learn More
+📸 *Screenshot: Homepage framing the problem before comparison*
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ✅ After – Referee-Style Comparison
+The referee evaluates options using explicit constraints:
+- Budget
+- Latency expectations
+- Operational tolerance
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+It then produces:
+- A clear **winner**
+- A concise **why**
+- Explicit **trade-offs (what you give up)**
 
-## Deploy on Vercel
+📸 *Screenshot: /compare page before clicking “Compare” (constraints visible)*  
+📸 *Screenshot: /compare page after clicking “Compare” (winner & explanation)*  
+📸 *Screenshot: Expanded JSON showing raw scoring data*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How It Works
+
+1. User provides constraints (budget, latency, ops tolerance)
+2. The `/api/compare` endpoint evaluates each API Gateway option
+3. A deterministic referee decision is returned
+4. The UI renders both:
+   - Human-readable explanation
+   - Raw JSON for transparency
+
+---
+
+## Spec → Code Traceability (Kiro)
+
+The decision logic is driven by a written specification:
+
+- `.kiro/specs/api-compare.md`
+
+This spec defines:
+- Compared options
+- Decision criteria
+- Expected inputs and outputs
+
+Kiro is used to refine the spec and guide implementation.
+
+📸 *Screenshot: Kiro panel showing spec refinement or suggestion*
+
+---
+
+## Why This Matters
+
+This project demonstrates:
+- Clear problem framing
+- Deterministic decision-making
+- Trade-off transparency
+- Spec-driven development
+
+It prioritizes **clarity of reasoning** over feature count.
