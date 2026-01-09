@@ -20,7 +20,7 @@ Developers typically rely on:
 **Result:**  
 Unclear decisions, over-engineering, or unnecessary cost.
 
-📸 ![Homepage](docs/screenshots/homepage-referee.png) Homepage framing the problem before comparison*
+📸 ![Homepage](screenshots/homepage-referee.png) Homepage framing the problem before comparison*
 
 ---
 
