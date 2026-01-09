@@ -35,8 +35,8 @@ It then produces:
 - A concise **why**
 - Explicit **trade-offs (what you give up)**
 
-📸 *Screenshot: /compare page before clicking “Compare” (constraints visible)*  
-📸 *Screenshot: /compare page after clicking “Compare” (winner & explanation)*  
+📸 *Screenshot: ![Compare Before](screenshots/compare-before.png)
+📸 *Screenshot: ![Compare After](screenshots/compare-after.png)
 📸 *Screenshot: Expanded JSON showing raw scoring data*
 
 ---
