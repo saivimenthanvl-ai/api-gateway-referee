@@ -11,7 +11,7 @@ the tool evaluates trade-offs and explains **why one option wins and what you gi
 
 ## Before vs After: Decision Clarity
 
-### ❌ Before – Static Documentation & Ambiguity
+### Before – Static Documentation & Ambiguity
 Developers typically rely on:
 - AWS documentation pages
 - Blog posts with opinionated recommendations
@@ -20,11 +20,11 @@ Developers typically rely on:
 **Result:**  
 Unclear decisions, over-engineering, or unnecessary cost.
 
-📸 ![Homepage](screenshots/homepage-referee.png) Homepage framing the problem before comparison*
+![Homepage](screenshots/homepage-referee.png) Homepage framing the problem before comparison*
 
 ---
 
-### ✅ After – Referee-Style Comparison
+### After – Referee-Style Comparison
 The referee evaluates options using explicit constraints:
 - Budget
 - Latency expectations
@@ -35,11 +35,9 @@ It then produces:
 - A concise **why**
 - Explicit **trade-offs (what you give up)**
 
-📸 *Screenshot: ![Compare Before](screenshots/compare-before.png)
-📸 *Screenshot: ![Compare After](screenshots/compare-after.png)
-📸 *Screenshot: ![Expanded JSON](screenshots/homepage-referee.png) showing raw scoring data*
-
----
+*Screenshot: ![Compare Before](screenshots/compare-before.png)
+*Screenshot: ![Compare After](screenshots/compare-after.png)
+*Screenshot: ![Expanded JSON](screenshots/homepage-referee.png) showing raw scoring data*
 
 ## How It Works
 
@@ -50,13 +48,11 @@ It then produces:
    - Human-readable explanation
    - Raw JSON for transparency
 
----
-
 ## Spec → Code Traceability (Kiro)
 
 The decision logic is driven by a written specification:
 
-- `.kiro/specs/api-compare.md`
+`.kiro/specs/api-compare.md`
 
 This spec defines:
 - Compared options
@@ -65,13 +61,13 @@ This spec defines:
 
 Kiro is used to refine the spec and guide implementation.
 
-📸 *Screenshot: ![Kiro Spec](screenshots/kiro-spec.png)
+*Screenshot: ![Kiro Spec](screenshots/kiro-spec.png) Kiro Speculation*
 
 
 
-📸 *Screenshot: ![Kiro Action](screenshots/kiro-action.png)
+*Screenshot: ![Kiro Action](screenshots/kiro-action.png) Kiro in Action*
 
----
+
 
 ## Why This Matters
 
