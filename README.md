@@ -35,9 +35,9 @@ It then produces:
 - A concise **why**
 - Explicit **trade-offs (what you give up)**
 
-*Screenshot: ![Compare Before](screenshots/compare-before.png)
-*Screenshot: ![Compare After](screenshots/compare-after.png)
-*Screenshot: ![Expanded JSON](screenshots/homepage-referee.png) showing raw scoring data*
+![Compare Before](screenshots/compare-before.png)
+![Compare After](screenshots/compare-after.png)
+![Expanded JSON](screenshots/homepage-referee.png) showing raw scoring data
 
 ## How It Works
 
@@ -61,11 +61,8 @@ This spec defines:
 
 Kiro is used to refine the spec and guide implementation.
 
-*Screenshot: ![Kiro Spec](screenshots/kiro-spec.png) Kiro Speculation*
-
-
-
-*Screenshot: ![Kiro Action](screenshots/kiro-action.png) Kiro in Action*
+![Kiro Spec](screenshots/kiro-spec.png) 
+![Kiro Action](screenshots/kiro-action.png)
 
 
 
