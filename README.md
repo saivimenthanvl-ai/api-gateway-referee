@@ -65,8 +65,8 @@ This spec defines:
 
 Kiro is used to refine the spec and guide implementation.
 
-📸 *Screenshot: ![Kiro Spec](docs/screenshots/kiro-spec.png)
-![Kiro Action](docs/screenshots/kiro-action.png)*
+📸 *Screenshot: ![Kiro Spec](screenshots/kiro-spec.png)
+![Kiro Action](screenshots/kiro-action.png)*
 
 ---
 
