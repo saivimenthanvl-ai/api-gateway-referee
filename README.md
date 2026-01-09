@@ -37,7 +37,7 @@ It then produces:
 
 📸 *Screenshot: ![Compare Before](screenshots/compare-before.png)
 📸 *Screenshot: ![Compare After](screenshots/compare-after.png)
-📸 *Screenshot: Expanded JSON showing raw scoring data*
+📸 *Screenshot: ![Expanded JSON](screenshots/homepage-referee.png) showing raw scoring data*
 
 ---
 
@@ -65,7 +65,8 @@ This spec defines:
 
 Kiro is used to refine the spec and guide implementation.
 
-📸 *Screenshot: Kiro panel showing spec refinement or suggestion*
+📸 *Screenshot: ![Kiro Spec](docs/screenshots/kiro-spec.png)
+![Kiro Action](docs/screenshots/kiro-action.png)*
 
 ---
 
